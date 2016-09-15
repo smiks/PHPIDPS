@@ -5,7 +5,7 @@ $_PHPIDPS_threshold = 0;
 $_PHPIDPS_autoBlock = false;  // auto unset both GET and POST and block execution when threshold reached
 $_PHPIDPS_autoUnsetGet = true;  // auto unset GET when threshold reached
 $_PHPIDPS_autoUnsetPost = true;  // auto unset POST when threshold reached
-$_PHPIDPS_originURL = "avatar-rpg.net";
+$_PHPIDPS_originURL = "yourdomain.net";
 $_PHPIDPS_customFile = "custom.php"; // custom file to run when threshold is reached (if there is no file, none will be executed)
 $_PHPIDPS_intrusionReport = ['description', 'tags', 'threatLevel', 'infectedRequests'];  // list what you want to print. Possible values 'description', 'tags', 'threatLevel', 'infectedRequests'
 
