@@ -38,7 +38,7 @@ if($_PHPIDPS_autoUnsetGet && $_PHPIDPS_infectedRequests["GET"] && $_PHPIDPS_thre
 if($_PHPIDPS_autoUnsetPost && $_PHPIDPS_infectedRequests["POST"] && $_PHPIDPS_threatLevel >= $_PHPIDPS_threshold){
 	unset($_POST);
 }
-if(file_exists("PHPIDPS/phpidps_custom/" . $_PHPIDPS_customFile) && $_PHPIDPS_threatLevel >= $_PHPIDPS_threshold){
+if(strlen($_PHPIDPS_customFile) > 0 && file_exists("PHPIDPS/phpidps_custom/" . $_PHPIDPS_customFile) && $_PHPIDPS_threatLevel >= $_PHPIDPS_threshold){
 	include("PHPIDPS/phpidps_custom/" . $_PHPIDPS_customFile);
 }
 
